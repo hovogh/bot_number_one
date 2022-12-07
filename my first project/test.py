@@ -52,9 +52,6 @@ def sendmessage(message):
         bot.send_message(message.chat.id, f'You have {sef_test.chekapp(message.chat.id)} apples\nYou have {sef_test.chekch(message.chat.id)} chocolates')
     elif message.text == '7 - Show checkout information':
         bot.send_message(message.chat.id, f'Applse:             {sef_test.priceapp(message.chat.id)}$\nChocolates:      {sef_test.pricech(message.chat.id)}$\n________________\nPay:                   {sef_test.priceapp(message.chat.id) + sef_test.pricech(message.chat.id)}$')
-        @bot.message_handler(commands=['button']):
-
-
 
 
 bot.polling(none_stop=True)
