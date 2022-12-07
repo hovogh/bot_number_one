@@ -54,4 +54,6 @@ def sendmessage(message):
         bot.send_message(message.chat.id, f'Applse:             {sef_test.priceapp(message.chat.id)}$\nChocolates:      {sef_test.pricech(message.chat.id)}$\n________________\nPay:                   {sef_test.priceapp(message.chat.id) + sef_test.pricech(message.chat.id)}$')
 
 
+print('Starting...')
+
 bot.polling(none_stop=True)
